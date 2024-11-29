@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>МТ ЛР2</h1>
+        <p>Гаврилов Никита. ИУ3-31М. Вариант 8(2)</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Спутниковое и DVB-T2 телевидение. Стандарты телевизионного вещания. Программные средства</h2>
+        <p>Гаврилов Никита<br>ИУ3-31М</p>
+        <figure>
+			<img class="cover" id="bmstu" src="pictures/bmstulogo.png">
+            <img class="cover" id="background" src="pictures/1.png" alt="Hands on the orange typewriter in a park">
+            <figcaption class="copyright right white">
+                <a href="localhost:8081">© Gavrilov Nikita</a>
+            </figcaption>
+        </figure>
+        <style>
+			#bmstu{
+				width: 10%;
+				position: absolute;
+				top: 55px;
+				left: 897px;
+				z-index: 100;
+			}
+			#background {
+			}
+            #cover h2 {
+                margin: 30px 0 0;
+                color: #ebebeb;
+                text-align: left;
+                font-size: 54px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: left;
+                color: #e04f9d;
+                font-size: 18px;
+				text-transform: uppercase;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+		<h2 id="stitle">Содержание</h2>
+        <ul>
+            <li>Виды телевизионного вещания</li>
+            <li>Спутниковое телевидение</li>
+            <li>DVB-T2 телевидение</li>
+            <li>Коаксиальный кабель</li>
+            <li>Стандарты телевизионного вещания</li>
+			<li>Программные средства для приёма и обработки сигнала</li>
+			<li>Будущее телевизионного вещания</li>
+        </ul>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+        </figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		ul {
+			padding-top: 40px;
+			font-size: 18px;
+		}
+		li {
+			color: #404040;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">Виды телевизионного вещания</h2>
+        <ul id="top_ul">
+            <li>Аналоговое телевидение</li>
+            <li>Цифровое телевидение<ul id="bottom_ul"><li>Кабельное и интернет-телевидение</li></ul></li>
+        </ul>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+        </figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		#top_ul {
+			padding-top: 40px;
+			font-size: 18px;
+		}
+		#bottom_ul {
+			padding-top: 0;
+			font-size: 16px;
+		}
+		li {
+			color: #404040;
+		}
+		</style>
+	</section>
+
+    <section class="slide">
+        <h2 id="stitle">Спутниковое телевидение</h2>
+        <ul>Основные шаги передачи:
+            <li>Передача сигнала на спутник</li>
+            <li>Передача от спутника на Землю</li>
+            <li>Приём сигнала пользователем</li>
+        </ul>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="gif" src="pictures/image3.gif"></img>
+		</figure>
+		<style>
+		#gif {
+			width: 38%;
+			padding-top: 200px;
+			padding-left: 500px;
+		}
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		ul {
+			color: #404040;
+			padding-top: 40px;
+			font-size: 18px;
+		}
+		li {
+			padding-left: 26px;
+			color: #404040;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">Оборудование для спутникового<br>телевидения</h2>
+        <div class="columns three" id="col_three_img">
+            <p>Спутниковая антенна<br><img src="pictures/image5.jpg"></p>
+            <p>Конвертер (LNB)<br><img src="pictures/image4.jpg"></p>
+			<p>Ресивер<br><br><img src="pictures/image3.jpg"></p>
+		</div>
+		<p class="note" id="note_prim">LNB (Low-noise block downconverter, малошумящий усилитель и понижающий преобразователь частоты)</p>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="vertical_bar1" src="pictures/vertical_bar.png">
+			<img class="cover" id="vertical_bar2" src="pictures/vertical_bar.png">
+		</figure>
+		<style>
+		#note_prim{
+			font-size: 15px;
+		}
+		#col_three_img img {
+			max-width: 100%;
+            max-height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		#vertical_bar1 {
+			padding-right: 260px;
+			padding-top: 140px;
+			height: 6.7cm;
+		}
+		#vertical_bar2 {
+			padding-left: 330px;
+			padding-top: 140px;
+			height: 6.7cm;
+		}
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		div {
+			padding-top: 60px;
+			font-size: 20px;
+			color: #f272b5;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">DVB-T2 телевидение</h2>
+		<div class="columns one">
+			<img class="cover" id="dvb" src="pictures/image7.png">
+		</div>
+        <figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+        </figure>
+		<p class="note" id="note_prim2">DVB-T2 (Digital Video Broadcasting — Second Generation Terrestrial, цифровое наземное телерадиовещание второго поколения)</p>
+		<style>
+		#dvb {
+			padding-top: 200px;
+			padding-right: 100px;
+			z-index: 1;
+			max-width: 60%;
+			max-height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		#note_prim2{
+		 font-size: 15px;
+			padding-top: 36%;
+		}
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">DVB-T2 как замена стандарту DVB-T</h2>
+        <figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide7.png">
+		</figure>
+		<style>
+		#cslide {
+			z-index:1
+		}
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		ul {
+			padding-top: 40px;
+			font-size: 18px;
+		}
+		li {
+			color: #404040;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle2">Оборудование<br>для DVB-T2<br>телевидения</h2>
+        <figure>
+            <img class="cover" id="background" src="pictures/2.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide8.png">
+		</figure>
+		<style>
+		#stitle2 {
+			font-size: 40px;
+			color: #ebebeb;
+			padding-top: 125px;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">Сравнение спутникового и DVB-T2<br>телевидения</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide9.png">
+		</figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle3">Коаксиальный<br>кабель</h2>
+		<h2 id="stitle4">кабель,<br>которому всё<br>равно, что вы<br>смотрите!</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/4.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide10.png">
+		</figure>
+		<style>
+		#stitle3 {
+			padding-top: 70px;
+			font-size: 24px;
+			color: #ebebeb;
+		}
+		#stitle4 {
+			font-size: 24px;
+			color: #ef53a6;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle">Стандарты телевизионного вещания</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide11.png">
+		</figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+
+    <section class="slide">
+        <h2 id="stitle5">Стандарты телевизионного вещания.<br>Карта</h2>
+		<figure>
+			<img class="cover" id="cslide" src="pictures/slide12.png">
+        </figure>
+		<style>
+		#stitle5 {
+			font-size: 36px;
+			color: black;
+		}
+		</style>
+    </section>
+	
+	<section class="slide">
+        <h2 id="stitle">Программные средства для приема<br>и обработки сигнала</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide13.png">
+		</figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+	
+	<section class="slide">
+        <h2 id="stitle">Будущее телевизионного вещания</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide14.png">
+		</figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+	
+	<section class="slide">
+        <h2 id="stitle">Заключение</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide15.png">
+		</figure>
+		<style>
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+	
+	<section class="slide">
+        <h2 id="stitle">Спасибо за внимание!</h2>
+		<figure>
+            <img class="cover" id="background" src="pictures/3.png" alt="Hands on the orange typewriter in a park">
+			<img class="cover" id="cslide" src="pictures/slide16.png">
+			<img class="cover" id="homer" src="pictures/homer.gif">
+		</figure>
+		<style>
+		#homer{
+			z-index: 100;
+			padding-top: 200px;
+		}
+		#stitle {
+			font-size: 36px;
+			color: #ebebeb;
+		}
+		</style>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
